@@ -10,15 +10,15 @@ This repository contains the codebase for the EMNLP long paper submission: **HyQ
 
 ## 🤔 What is HyQE?
 
-**Hypothetical Query Embeddings (HyQE)** is a novel context-ranking method designed to improve retrieval-augmented generation systems. It leverages **large language models (LLMs)** to generate hypothetical queries from the contexts, builds an index for these hypothetical queries, and compares user queries with these hypothetical queries to rank contexts more effectively. By embedding contexts as queries, HyQE enables enhanced reasoning and comparison of multiple context options, leading to more relevant and contextually accurate results.
+**Hypothetical Query Embeddings (HyQE)** is a novel context-ranking method designed to improve retrieval-augmented generation systems. It leverages **large language models (LLMs)** to generate hypothetical queries from the contexts, builds an index for these queries, and ranks contexts by comparing user queries against the hypothetical ones. Our method is grounded in variational inference: treating contexts and queries as belonging to distinct domains. While cosine similarity measures in-domain relevance, LLMs act as a bridge between these domains.
 
 <p align="center">
     <img src="./assets/figures/hyqe_architecture.png" alt="HyQE Main Structure" width="100%">
 </p>
 
-### Key observation
+### 🤔 Why HyQE?
 
-Instead of directly comparing the similarity between a query and contexts, HyQE introduces the idea of comparing **query-to-query similarities**. The core insight is that the contexts (🟥) with the closest embedding to the query (🟣) do not always provide the best answer. The contexts retrieved via HyQE have more diverse embeddings (🟩), while providing more relevant and accurate answers to the queries.
+The key insight of HyQE is that, rather than directly comparing the similarity between a query and contexts, HyQE focuses on **query-to-query similarities**. We observe that contexts (🟥) with embeddings closest to the query (🟣) do not always provide the best answers. In contrast, HyQE retrieves contexts with more diverse embeddings (🟩), leading to more relevant and accurate answers to the queries.
  
 <p align="center">
     <img src="./assets/figures/ica1.png" alt="ICA1" width="30%">
