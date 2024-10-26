@@ -113,10 +113,10 @@ If you use this codebase in your research, please cite our paper:
 
 ```
 @article{zhou2024hyqe,
-    title={HyQE: Ranking Contexts with Hypothetical Query Embeddings},
-    author={Weichao Zhou and Jiaxin Zhang and Hilaf Hasson and Anu Singh and Wenchao Li},
-    year={2024},
-    note={EMNLP 2024 Findings}
+  title={HyQE: Ranking Contexts with Hypothetical Query Embeddings},
+  author={Zhou, Weichao and Zhang, Jiaxin and Hasson, Hilaf and Singh, Anu and Li, Wenchao},
+  journal={arXiv preprint arXiv:2410.15262},
+  year={2024}
 }
 ```
  
