@@ -112,11 +112,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you use this codebase in your research, please cite our paper:
 
 ```
-@article{zhou2024hyqe,
+@inproceedings{zhou2024hyqe,
   title={HyQE: Ranking Contexts with Hypothetical Query Embeddings},
   author={Zhou, Weichao and Zhang, Jiaxin and Hasson, Hilaf and Singh, Anu and Li, Wenchao},
-  journal={arXiv preprint arXiv:2410.15262},
+  journal={Findings of the Association for Computational Linguistics: EMNLP 2024},
   year={2024}
 }
 ```
+
  
